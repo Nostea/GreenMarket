@@ -28,8 +28,7 @@ const app = express();
 // app.use(express.static("data/images")); // static file server
 
 const twoWeeksInMs = 14 * 24 * 60 * 60 * 1000;
-const isFrontendLocalhost =
-  process.env.FRONTEND_URL.startsWith("http://localhost");
+const isFrontendLocalhost = process.env.FRONTEND_URL.startsWith("http://localhost");
 const cookieSessionSecret = process.env.COOKIE_SESSION_SECRET;
 
 console.log(process.env.FRONTEND_URL);
@@ -64,10 +63,9 @@ app.use("/api/v1/order", orderRouter);
 
 app.use("/api/v1/uploads", express.static("uploads"));
 
+/*
 app.use((req, res, next) => {
-  if (
-    /(.ico|.js|.css|.jpg|.jpeg|.png|.svg|.map|.woff|.woff2)$/i.test(req.path)
-  ) {
+  if (/(.ico|.js|.css|.jpg|.jpeg|.png|.svg|.map|.woff|.woff2)$/i.test(req.path)) {
     next();
   } else {
     res.header("Cache-Control", "private, no-cache, no-store, must-revalidate");
@@ -78,6 +76,8 @@ app.use((req, res, next) => {
 });
 
 app.use(express.static("frontend"));
+*/
+
 
 try {
   await connectToDatabase();
