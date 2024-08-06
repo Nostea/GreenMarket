@@ -1,0 +1,53 @@
+.search-products {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  position: relative;
+  row-gap: 0;
+  margin-bottom: 10vh;
+  margin-top: 3vh;
+}
+
+.search-top {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+
+.thumbnail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.thumbnail img {
+  margin-top: 3vh;
+  max-height: 170px;
+  min-width: 100vw;
+  object-fit: cover;
+}
+
+/* * We're mobile first */
+
+/* ! Desktop */
+@media only screen and (min-width: 768px) {
+  .search-page {
+    padding-top: 5vh;
+  }
+}
+
+/* * We're mobile first */
+
+/* ! Desktop */
+@media only screen and (min-width: 768px) {
+  .search-page {
+    margin-top: 3vw;
+  }
+  .search-products {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .thumbnail {
+    display: none;
+  }
+}

@@ -1,0 +1,98 @@
+.single-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  background-color: white;
+  padding: 1rem;
+  gap: 3vw;
+  border-radius: 1rem;
+}
+
+.single-item .fa-heart {
+  color: var(--grey);
+  top: 0;
+  right: 0;
+  padding-top: 4vw;
+  padding-right: 4vw;
+  position: absolute;
+}
+
+.item-img img {
+  display: flex;
+  align-items: center;
+  max-height: 70px;
+  min-width: 150px;
+  border-radius: 1rem;
+}
+
+.item-weight {
+  margin-right: 3vw;
+}
+
+.product-rating .fa-heart {
+  font-size: 0.9rem;
+  margin-left: 5vw;
+}
+
+.item-content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-left: 5vw;
+}
+
+.item-content h1 {
+  font-size: 1rem;
+}
+
+.item-content p {
+  font-weight: 900;
+}
+
+.plus-minus {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+}
+
+.plus-minus .item-amount {
+  font-size: 1rem;
+}
+
+.item-rate {
+  margin-right: 3vw;
+}
+
+.item-amount {
+  color: var(--font);
+}
+
+.fa-square-minus {
+  color: var(--main);
+}
+
+.fa-square-plus {
+  color: var(--main);
+}
+
+.fa-square-minus,
+.fa-star,
+.fa-square-plus {
+  font-size: 1.2rem;
+}
+
+.fa-trash-can {
+  position: absolute;
+  top: 15%;
+  right: 5%;
+  font-size: 1.2rem;
+}
+
+/* ! Desktop */
+@media (min-width: 768px) {
+  .single-item {
+    width: 30vw;
+    gap: 0.5vw;
+  }
+}

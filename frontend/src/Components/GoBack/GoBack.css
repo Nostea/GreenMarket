@@ -1,0 +1,26 @@
+.go-back {
+  display: flex;
+  padding: 5vw;
+  gap: 2vw;
+}
+
+.go-back img {
+  padding: 0.5rem;
+}
+
+.go-back-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--font);
+}
+
+/* * We're mobile first */
+
+/* ! Desktop */
+@media only screen and (min-width: 768px) {
+  .go-back {
+    display: flex;
+    padding: 2vw;
+    gap: 1vw;
+  }
+}

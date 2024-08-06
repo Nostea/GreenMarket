@@ -1,0 +1,26 @@
+.topdeals-feed {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  position: relative;
+  gap: 0.4rem;
+  margin-bottom: 10vh;
+  padding: 0vh 1vw;
+}
+.topdeals-container h1 {
+  font-size: 1.2rem;
+  color: var(--font);
+  margin-top: 2vh;
+  margin-left: 4vw;
+  margin-bottom: 2vh;
+}
+
+/* ! Desktop */
+@media only screen and (min-width: 768px) {
+  .topdeals-feed {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    position: relative;
+    gap: 0.4rem;
+    margin-bottom: 10vh;
+  }
+}

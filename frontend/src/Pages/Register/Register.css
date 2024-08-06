@@ -1,0 +1,70 @@
+.register-container {
+  display: flex;
+  flex-direction: column;
+  min-height: screen;
+}
+
+.register-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 8vh;
+}
+
+.register-top h1 {
+  color: var(--font);
+  margin-top: 3vh;
+}
+
+.register-top p {
+  color: var(--grey);
+}
+
+.register-inputs {
+  margin-bottom: 6vh;
+}
+
+.register-inputs form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 4vh;
+}
+
+.register-button {
+  margin: auto;
+  flex-grow: 1;
+}
+
+.register-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 3vh;
+}
+
+.bottom-text span {
+  color: var(--main);
+}
+
+/* * We're mobile first */
+
+/* ! Desktop */
+@media only screen and (min-width: 768px) {
+  .register-inputs form {
+    gap: 2rem;
+  }
+  .register-top {
+    margin-bottom: 4vh;
+  }
+  .register-top h1 {
+    color: var(--font);
+    margin-top: -4vh;
+  }
+  .register-button {
+    margin: 0.5vw auto;
+  }
+}

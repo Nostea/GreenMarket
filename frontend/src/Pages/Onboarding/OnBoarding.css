@@ -1,0 +1,52 @@
+.onboarding-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.onboarding-container h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: var(--main);
+  margin-top: 1vh;
+}
+
+.onboarding-container h2 {
+  font-size: 1.3rem;
+  color: var(--font);
+  margin-bottom: 0.5vh;
+}
+
+.onboarding-container p {
+  font-size: 1rem;
+  text-align: center;
+  color: var(--grey);
+  margin-bottom: 5vh;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+.onboarding-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 25vh;
+}
+
+.onboarding-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.onboarding-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2vh;
+}
