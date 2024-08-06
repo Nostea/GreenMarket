@@ -63,6 +63,11 @@ app.use("/api/v1/order", orderRouter);
 
 app.use("/api/v1/uploads", express.static("uploads"));
 
+// ! erstelle eine startseite
+app.get("/", (req, res) => {
+  res.send("Hello from GreenMarket");
+});
+
 /*
 app.use((req, res, next) => {
   if (/(.ico|.js|.css|.jpg|.jpeg|.png|.svg|.map|.woff|.woff2)$/i.test(req.path)) {
@@ -77,7 +82,6 @@ app.use((req, res, next) => {
 
 app.use(express.static("frontend"));
 */
-
 
 try {
   await connectToDatabase();
