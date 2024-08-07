@@ -34,7 +34,7 @@ const cookieSessionSecret = process.env.COOKIE_SESSION_SECRET;
 console.log(process.env.FRONTEND_URL);
 
 // re-configure cors middleware
-app.use(cors({ origin: [process.env.FRONTEND_URL], credentials: true }));
+app.use(cors());
 /////////// add parser for cookies
 app.set("trust proxy", 1); // trust first proxy
 const cookieSessionOptions = {
