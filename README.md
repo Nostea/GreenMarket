@@ -4,7 +4,7 @@ A group portfolio project
 
 ## :exclamation: Live preview info
 
-- On first live demo visit it may take 60 seconds for the elements to load (the server needs to be spun up after longtime inactivity)
+- On first live demo visit it may take 60 seconds for the elements to load (the backend server needs to be spun up after longtime inactivity)
   
   https://greenmarket-frontend.onrender.com/
 
